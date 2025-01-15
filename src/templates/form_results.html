@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Results for {{ form.name }}</h2>
+<table>
+    <thead>
+        <tr>
+            {% for field in form.fields %}
+            <th>{{ field.name }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for response in responses %}
+        <tr>
+            {% for field in form.fields %}
+            <td>{{ response.response[field.name] }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="/">Back to Home</a>
+{% endblock %}
+

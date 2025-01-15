@@ -1,0 +1,19 @@
+formica_project/
+├── venv/                     # Virtual environment (generated via Python venv)
+├── requirements.txt          # Python dependencies
+├── src/                      # Source code directory
+│   ├── app.py                # Main application file (entry point)
+│   ├── database.py           # Database connection logic (MongoDB)
+│   ├── models.py             # Models for forms and responses
+│   ├── routes.py             # URL routes and view logic
+│   ├── templates/            # HTML templates for rendering frontend
+│   │   ├── base.html         # Base HTML template
+│   │   ├── form_create.html  # Page to create forms
+│   │   ├── form_fill.html    # Page to fill out forms
+│   │   ├── form_results.html # Page to view form submissions and analytics
+│   ├── static/               # Static files like CSS and JavaScript
+│       ├── css/
+│       │   └── styles.css    # Custom CSS styles
+│       ├── js/
+│           └── scripts.js    # JavaScript for frontend logic
+
